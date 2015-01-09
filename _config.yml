@@ -5,6 +5,8 @@ permalink: /:categories/:year/:month/:day/:title
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 highlighter: pygments
 
+safe: true
+
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
@@ -79,8 +81,10 @@ JB :
   # Set 'provider' to the comment provider you want to use.
   # Set 'provider' to false to turn commenting off globally.
   #
-  #comments :
-    #provider : duoshuo
+  comments :
+    provider : duoshuo
+    duoshuo:
+            short_name: thomaszhao
     #disqus :
     #  short_name : jekyllbootstrap
     #livefyre :
