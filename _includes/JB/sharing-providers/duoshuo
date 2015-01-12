@@ -1,12 +1,7 @@
 <!-- Duoshuo Sharing START -->
 <div class="ds-share"
-data-thread-key="{{ page.id }}"
 data-title="{{ page.title }}"
-data-content="{{ page.excerpt }}"
 data-url="{{site.production_url}}{{ page.url }}">
-<!--  todo: in furture it should be my logo
-data-images="此处请替换为分享时显示的图片的链接地址"
--->
     <div class="ds-share-inline">
       <ul  class="ds-share-icons-16">
         <li>分享到：</li>
