@@ -1,5 +1,5 @@
 <!-- Duoshuo Comment START -->
-<div class="ds-thread" data-thread-key="{{ page.id }}" data-title="{{ page.title }}" data-url="{{site.production_url}}{{ page.url }}"></div>
+<div class="ds-thread" data-thread-key="{% if page.old_id %}{{page.old_id}}{% else %}{{page.id}}{% endif %}" data-title="{{ page.title }}" data-url="{{site.production_url}}{{ page.url }}"></div>
 <script type="text/javascript">
 var duoshuoQuery = {short_name:"{{ site.JB.comments.duoshuo.short_name }}"};
 (function() {
