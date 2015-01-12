@@ -1,6 +1,6 @@
 # This is the default format. 
 # For more see: http://jekyllrb.com/docs/permalinks/
-permalink: /:categories/:year/:month/:day/:title 
+permalink: /:year/:month/:day/:title
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 highlighter: pygments
@@ -28,6 +28,10 @@ author :
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
 production_url : http://thomaszhao.github.io
+
+# Customized excerpt separator in Jekyll
+excerpt_separator: \n\n\n
+
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
