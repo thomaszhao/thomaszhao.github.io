@@ -1,11 +1,11 @@
 ---
-title: 我是hello world2
+title: 我是hello world (sandbox)
 layout: post
 category : lessons
-tagline: "Supporting tagline"
+tagline: ""
 old_id: /2015/01/09/hello_world2aaa
 id: /2015/01/09/hello_world2aaabbbb
-tags : [beginner]
+tags : [beginner, sandbox]
 ---
 {% include JB/setup %}
 
@@ -39,6 +39,18 @@ int main(int argc, char *argv[])
   exit 0;
 }
 ```
+
+* highlight by Pygments:
+
+{% highlight c linenos %}
+#include <stdio.h>
+int main(int argc, char *argv[]) 
+{
+  print("hello ");
+  print("world.\n");
+  exit 0;
+}
+{% endhighlight c %}
 
 
 
