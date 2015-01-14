@@ -2,7 +2,7 @@
 
 /*
  * custmized css for jekyl-bootstrap
- */
+-------------------------------------------------- */
 
 /* posts index */
 .post > h3.title {
@@ -72,7 +72,7 @@
  *
  * Scrollspy and affixed enhanced navigation to highlight sections and secondary
  * sections of docs content.
- */
+-------------------------------------------------- */
 
 /* dummy for top nav */
 .bs-docs-bar-top {
@@ -235,7 +235,7 @@
  * Docs sections
  *
  * Content blocks for each component or feature.
- */
+-------------------------------------------------- */
 
 /* Space things out */
 .bs-docs-section {
@@ -247,6 +247,35 @@
 
 
 
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -30px;
+  /* Pad bottom by footer height */
+  padding: 0 0 30px;
+}
+
+/* Set the fixed height of the footer here */
+#footer {
+  height: 30px;
+  background-color: #f5f5f5;
+}
+
+#footer p {
+  line-height: 30px;
+  margin-bottom: 0px;
+}
 
 
 
