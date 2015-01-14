@@ -7,9 +7,9 @@
       <h1 id="title">{{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</h1>
       <div class="date">
           By
-          <a href="https://github.com/{{ site.author.github }}">{{ site.author.name }}</a>
+          <a href="{{ site.production_url }}">{{ site.author.name }}</a>
           on
-          {{ page.date | date_to_long_string }}
+          <b>{{ page.date | date_to_long_string }}</b>
       </div>
     </div>
 
