@@ -80,29 +80,10 @@
       </nav>
 
     <!-- doc-container -->
-    <div class="container bs-docs-container">
+    <div class="container">
 
-      <div class="row">
-        <div class="col-md-{% if page.fullwidth == true %}12{% else %}9{% endif %}" role="main" id="article_body">
+        {{ content }}
 
-          {{ content }}
-
-        </div> <!-- class="col-md-9" -->
-        {% unless page.fullwidth == true %}
-        <div class="col-md-3" role="complementary">
-          <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm">
-              <ul id="sideNav" class="nav bs-docs-sidenav">
-
-                <!-- code will be generated in application.js -->
-
-              </ul>
-              <a class="back-to-top" href="#top">
-                Back to top
-              </a>
-          </nav>
-        </div> <!-- col-md-3 -->
-        {% endunless %}
-      </div> <!-- div class="row" -->
     </div> <!-- doc-container -->
 
     </div><!-- div id="wrap" -->

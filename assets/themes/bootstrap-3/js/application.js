@@ -137,7 +137,7 @@ jQuery(function($) {
     */
 
         // Generate the side navigation `ul` elements
-        BlogDirectory.createBlogDirectory($("#sideNav"), $("#article_body"));
+        BlogDirectory.createBlogDirectory($("#sideNav"), $(".bs-docs-container"));
 
         // caculate affixing
         BlogDirectory.setSideNavAffixing();
