@@ -1,7 +1,7 @@
 ---
 title: 我是模板的标题
 tagline: ""
-description: ""
+excerpt: ""
 category : template
 layout: post
 tags : [template, myblog]

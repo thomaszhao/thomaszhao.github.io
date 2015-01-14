@@ -3,14 +3,17 @@
   <div class="col-md-{% if page.fullwidth == true %}12{% else %}9{% endif %}" role="main">
 
     <!-- article content -->
-    <div class="page-header">
+    <div class="page-header post-full">
       <h1 id="title">{{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</h1>
       <div class="date">
-        <span>{{ page.date | date_to_long_string }}</span>
+          By
+          <a href="https://github.com/{{ site.author.github }}">{{ site.author.name }}</a>
+          on
+          {{ page.date | date_to_long_string }}
       </div>
     </div>
 
-    <div class="row post-full">
+    <div class="row">
       <div class="col-xs-12">
         <div class="content bs-docs-container">
 

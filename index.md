@@ -1,11 +1,11 @@
 ---
 layout: page
 title: Thomas's Blog
-tagline: Supporting tagline
+tagline: ""
 ---
 {% include JB/setup %}
 
-## Blog Posts
+## Latest Posts
 
 <ul class="posts">
   {% for post in site.posts %}
