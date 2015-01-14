@@ -17,7 +17,7 @@
     <link href="{{ ASSET_PATH }}/bootstrap-3.3.1/css/bootstrap-theme.min.css" rel="stylesheet">
     <!-- Sticky Footer -->
     <link href="{{ ASSET_PATH }}/css/bs-sticky-footer.css" rel="stylesheet">
-    
+
     <!-- Custom styles -->
     <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
 
@@ -43,8 +43,11 @@
   </head>
 
   <body>
-    <div id="wrap">
-      <nav class="navbar navbar-default" role="navigation">
+  <!-- Skip to main content -->
+    <a id="skippy" class="sr-only sr-only-focusable" href="#content"><div class="container"><span class="skiplink-text">Skip to main content</span></div></a>
+
+   <div id="wrap">
+      <nav class="navbar navbar-default bs-docs-bar-top" role="navigation">
        <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -76,14 +79,36 @@
        </div><!-- class="container" -->
       </nav>
 
-      <div class="container">
-        {{ content }}
-      </div>
+    <!-- doc-container -->
+    <div class="container bs-docs-container">
 
-    </div>
+      <div class="row">
+        <div class="col-md-{% if page.fullwidth == true %}12{% else %}9{% endif %}" role="main" id="article_body">
+
+          {{ content }}
+
+        </div> <!-- class="col-md-9" -->
+        {% unless page.fullwidth == true %}
+        <div class="col-md-3" role="complementary">
+          <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm">
+              <ul id="sideNav" class="nav bs-docs-sidenav">
+
+                <!-- code will be generated in application.js -->
+
+              </ul>
+              <a class="back-to-top" href="#top">
+                Back to top
+              </a>
+          </nav>
+        </div> <!-- col-md-3 -->
+        {% endunless %}
+      </div> <!-- div class="row" -->
+    </div> <!-- doc-container -->
+
+    </div><!-- div id="wrap" -->
 
     <div id="footer">
-      <div class="container">
+      <div class="container bs-docs-bar-footer">
         <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
           with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
           and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
@@ -98,5 +123,6 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="{{ ASSET_PATH }}/jquery-1.11.2.min.js"></script>
     <script src="{{ ASSET_PATH }}/bootstrap-3.3.1/js/bootstrap.min.js"></script>
+    <script src="{{ ASSET_PATH }}/js/application.js"></script>
   </body>
 </html>
