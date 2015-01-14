@@ -17,6 +17,8 @@
     <link href="{{ ASSET_PATH }}/bootstrap-3.3.1/css/bootstrap-theme.min.css" rel="stylesheet">
     <!-- Custom styles -->
     <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+    <!-- google code prettify -->
+    <link href="{{ ASSET_PATH }}/google-code-prettify/prettify.css" rel="stylesheet" type="text/css" media="all">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -102,5 +104,12 @@
     <script src="{{ ASSET_PATH }}/jquery-1.11.2.min.js"></script>
     <script src="{{ ASSET_PATH }}/bootstrap-3.3.1/js/bootstrap.min.js"></script>
     <script src="{{ ASSET_PATH }}/js/application.js"></script>
+    <script src="{{ ASSET_PATH }}/google-code-prettify/prettify.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('pre').addClass('prettyprint').attr('style', 'overflow:auto');
+        prettyPrint();
+        });
+    </script>
   </body>
 </html>
