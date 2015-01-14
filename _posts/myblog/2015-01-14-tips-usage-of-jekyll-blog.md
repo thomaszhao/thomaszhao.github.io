@@ -1,5 +1,5 @@
 ---
-title: 日常使用jekyll blog
+title: 日常使用jekyll blog的Tips
 layout: post
 category : myblog
 tagline: 
@@ -10,12 +10,15 @@ tags : [jekyll, myblog]
 常用站点
 ------------------------------------------------------------------------------
 
-* bootstrap:         http://getbootstrap.com/
-* bootstrap中文版：  http://v3.bootcss.com/
+* bootstrap:         [http://getbootstrap.com/](http://getbootstrap.com/)
+* bootstrap中文版：  [http://v3.bootcss.com/](http://v3.bootcss.com/)
 * 
-* Jekyll:            http://jekyllrb.com/
-* Jekyll中文:        http://jekyllcn.com/
-* liquid             http://docs.shopify.com/themes/liquid-documentation/basics
+* Jekyll:            [http://jekyllrb.com/](http://jekyllrb.com/)
+* Jekyll中文:        [http://jekyllcn.com/](http://jekyllcn.com/)
+* liquid:            [http://docs.shopify.com/themes/liquid-documentation/basics](http://docs.shopify.com/themes/liquid-documentation/basics)
+* 
+* [Markdown Basics](https://help.github.com/articles/markdown-basics/)
+* [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/)
 
 我的github pages的目录结构:
 ------------------------------------------------------------------------------
@@ -91,6 +94,20 @@ tags : [jekyll, myblog]
 
 
 ```
+
+其他tips
+----------------------------------------------------------------------------
+
+### 如何输出转义字符？
+
+{% raw %} 
+如何让liquid代码不被解析？jekyll + liquid中，如果你需要输出`{% xxx %}`或`{{ xxx }}`时，因为这是liquid的特殊含义字符，所以会被jekyll解析，产生错误。如何正确的输出呢？
+答案: 使用 `{% raw %}` `{ % endraw %}` (去掉`{`和`%`之间的空格，这个endraw我也没办法输出。。。)
+{% endraw %}
+
+参考：
+	http://docs.shopify.com/themes/liquid-documentation/tags/theme-tags#raw
+
 
 ### Header 3
 
