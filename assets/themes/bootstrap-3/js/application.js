@@ -65,8 +65,11 @@ var BlogDirectory = {
      * generate directory tree list, and put them into side_nav_element.
      */
     createBlogDirectory:function (side_nav_element, article_body_element){
-        if(!article_body_element || article_body_element.length < 1)
+        if(!article_body_element || article_body_element.length < 1 ||
+                !side_nav_element) {
             return false;
+        }
+
         var nodes = article_body_element.find("h1,h2,h3");
         var ulSideNav = side_nav_element;
 
