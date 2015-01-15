@@ -67,12 +67,13 @@ Github Pages缺点：
 
 * 我对html之类的并不太熟悉，还是弄个模板吧。
 
-我最终选定的jekyllbootstrap。
+我最终选定的[jekyllbootstrap](http://jekyllbootstrap.com)。
 
 #### 选用哪个样式？
 
-jekyllbootstrap也有很多的样式可以选择，我开始选择的是[The-program](http://themes.jekyllbootstrap.com/preview/the-program/)模板，感觉很IT。但后来发现这个模板的代码写的太浮肿了，和默认的bootstrap-3的模板没法比。。。
-于是采用的是默认的bootstrap-3的模板，外加一些自己的小修改。后续会不断的调优。话说基于[bootstrap](http://getbootstrap.com)的web开发变得如此优雅。
+jekyllbootstrap也有很多的样式可以选择，我开始选择的是[The-program](http://themes.jekyllbootstrap.com/preview/the-program/)模板，感觉很IT。但后来发现这个模板的代码写的太浮肿了...。
+于是采用的是默认的`bootstrap-3`的模板，外加一些自己的小修改。后续进行不断的调优。
+BTW: 话说基于[bootstrap](http://getbootstrap.com)的web开发竟然变得如此优雅，想当年我们画表格的日子简直是弱爆了。
 
 #### 评论插件、站长统计
 

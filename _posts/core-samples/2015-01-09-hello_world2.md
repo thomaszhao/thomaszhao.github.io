@@ -21,7 +21,7 @@ baaaaaaaaa aaaaaaaaa aaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaalabalabala
 
 
 
-# header 1
+# header 1:
 
 [link](httpp://aaaa/)
 
@@ -65,7 +65,12 @@ int main(int argc, char *argv[])
 
 #this is not a header
 
+This is a sentence.[^1]
+
 ## Header 2
 
 ### Header 3
+
+
+[^1]: This is a footnote.
 
