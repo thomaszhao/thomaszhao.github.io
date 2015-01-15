@@ -11,8 +11,13 @@ tags : [beginner, sandbox]
 
 {{ page.layout }}
 
-balabalabala
+测试换行：
+baaaaaaaaaaa aaaaaaaaaaaa aaaaaaaaaaaa aaaaaaaaa aaaaaaaaalaba labal abaaaa aaaaaaaaaa aaaaaaaaaa aaaaaaaa aaaaaaaaa aaaaaaaaa aaalabalabala
+baaaaaaaaaaaa aaaaaaaaaaaaa aaaaaaaaaaa aaaaaaaaaaaaaaaaalabalabala
+baaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaa alabalabala
+baaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaalabalabala
 
+baaaaaaaaa aaaaaaaaa aaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaalabalabala
 
 
 
@@ -30,7 +35,13 @@ Here is my pic:
 
 * multi line code is:
 
-```C
+```shell
+# /bin/sh aaa
+
+```
+
+
+```c
 #include <stdio.h>
 int main(int argc, char *argv[]) 
 {
@@ -52,7 +63,7 @@ int main(int argc, char *argv[])
 }
 {% endhighlight c %}
 
-
+#this is not a header
 
 ## Header 2
 
