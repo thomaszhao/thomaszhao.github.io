@@ -3,7 +3,8 @@
 permalink: /:year/:month/:day/:title
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
-highlighter: pygments
+#highlighter: pygments
+highlighter: ""
 
 safe: true
 
@@ -11,6 +12,13 @@ safe: true
 markdown:    kramdown
 kramdown:
   input: GFM
+  hard_wrap: true
+  auto_id_prefix: "aaaaa"
+  hard_wrap: false
+
+redcarpet:
+  extensions: [autolink,with_toc_data]
+
 
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
