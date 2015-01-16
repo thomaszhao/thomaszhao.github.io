@@ -281,6 +281,23 @@ body {
 }
 
 
+
+/*
+ * Article Body part, most of them are generated in mardown.
+ *
+ * .bs-docs-container part, and markdown-body
+ *
+ * -------------------------------------------------------------------------*/
+
+
+.tom-callout-tips {
+  border: 3px solid #C0C0C0;
+  border-left-width: 6px;
+  border-left-color: #f0ad4e;
+}
+
+
+
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 /* It is cut out from `https://assets-cdn.github.com/assets/github-07ee5f9b28252daadba7750d43951602b35cdaa9dc19b5aff2eececebd6b6627.css`.
  * I use it for my own github pages based wiki: http://www.thomaszhao.cn/

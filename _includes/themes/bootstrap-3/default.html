@@ -108,6 +108,10 @@
         $('pre').addClass('prettyprint').attr('style', 'overflow:auto');
         prettyPrint();
 
+        /* Tips */
+        $('pre .language-tips').parent().addClass('tom-callout-tips');
+
+        /* A link icon on the left of headers. */
         $(".bs-docs-container h1,.bs-docs-container h2, .bs-docs-container h3, .bs-docs-container h4, .bs-docs-container h5, .bs-docs-container h6").each(function(i, el) {
           var $el, icon, id;
           $el = $(el);
