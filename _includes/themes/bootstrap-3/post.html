@@ -4,7 +4,7 @@
 
     <!-- article header -->
     <div class="page-header">
-        <h1 id="title"><a href="{{ page.url }}">
+        <h1 id="title"><a href="{{ page.url }}" target="_blank">
               {{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}
           </a>
         </h1>
@@ -12,7 +12,7 @@
           By&nbsp;<a href="{{ site.production_url }}">{{ site.author.name }}</a>
           on&nbsp;<b>{{ page.date | date_to_long_string }}</b>
           &nbsp;&nbsp;|&nbsp;&nbsp;
-          <a href="{{ site.repository_url }}{{ page.path }}">View on Github</a>
+          <a href="{{ site.repository_url }}{{ page.path }}" target="_blank">View on Github</a>
       </div>
     </div>
 
