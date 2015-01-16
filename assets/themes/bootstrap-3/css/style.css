@@ -18,9 +18,12 @@
   margin: 10px 0;
   text-align: left; }
 
-/* post-full*/
-.post-full .date {
+/* page-header*/
+.page-header .meta {
   color: #93908D;
+}
+.page-header > h1 > a {
+  color: black;
 }
 
 /* tag_box */
@@ -80,6 +83,7 @@
 
 /* dummy for footedummy for footerr*/
 .bs-docs-bar-footer {
+    text-align: center;
 }
 
 /* By default it's not affixed in mobile views, so undo that */

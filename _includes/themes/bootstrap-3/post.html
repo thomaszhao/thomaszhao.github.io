@@ -2,17 +2,21 @@
 <div class="row">
   <div class="col-md-{% if page.fullwidth == true %}12{% else %}9{% endif %}" role="main">
 
-    <!-- article content -->
-    <div class="page-header post-full">
-      <h1 id="title">{{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</h1>
-      <div class="date">
-          By
-          <a href="{{ site.production_url }}">{{ site.author.name }}</a>
-          on
-          <b>{{ page.date | date_to_long_string }}</b>
+    <!-- article header -->
+    <div class="page-header">
+        <h1 id="title"><a href="{{ page.url }}">
+              {{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}
+          </a>
+        </h1>
+      <div class="meta">
+          By&nbsp;<a href="{{ site.production_url }}">{{ site.author.name }}</a>
+          on&nbsp;<b>{{ page.date | date_to_long_string }}</b>
+          &nbsp;&nbsp;|&nbsp;&nbsp;
+          <a href="{{ site.repository_url }}{{ page.path }}">View on Github</a>
       </div>
     </div>
 
+    <!-- article body -->
     <div class="row">
       <div class="col-xs-12">
         <div class="content bs-docs-container markdown-body">
@@ -41,20 +45,25 @@
 
         <!-- Show pagination -->
         <hr>
-        <ul class="pagination">
-        {% if page.previous %}
-          <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&laquo; Previous</a></li>
-        {% else %}
-          <li class="prev disabled"><a>&larr; Previous</a></li>
-        {% endif %}
-          <li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a></li>
-        {% if page.next %}
-          <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &raquo;</a></li>
-        {% else %}
-          <li class="next disabled"><a>Next &rarr;</a>
-        {% endif %}
-        </ul>
+        <div>
+          <p>
+            {% if page.previous %}
+            &laquo;Previous:&nbsp;&nbsp; <a href="{{ BASE_PATH }}{{ page.previous.url }}">{{ page.previous.title }}</a>
+            {% else %}
+            &laquo;Previous: None.
+            {% endif %}
+          </p>
+          <p>
+            {% if page.next %}
+            &raquo;Next:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="{{ BASE_PATH }}{{ page.next.url }}">{{ page.next.title }}</a>
+            {% else %}
+            &raquo;Next:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; None.
+            {% endif %}
+          </p>
+        </div>
         <hr>
+
+        <!-- Sharing and comments -->
         {% include JB/sharing %}
         {% include JB/comments %}
       </div>
