@@ -249,7 +249,11 @@
   margin-bottom: 0;
 }
 
-
+.bs-docs-container {
+  border: 0;
+  padding: 30px;
+  border-radius: 0;
+}
 
 /* Sticky footer styles
 -------------------------------------------------- */
@@ -280,8 +284,6 @@ body {
   line-height: 30px;
   margin-bottom: 0px;
 }
-
-
 
 
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
@@ -333,9 +335,10 @@ body {
   line-height:1.4
 }
 
-.markdown-body h1 .octicon-link,.markdown-body h2 .octicon-link,.markdown-body h3 .octicon-link,.markdown-body h4 .octicon-link,.markdown-body h5 .octicon-link,.markdown-body h6 .octicon-link{
+.markdown-body h1 .glyphicon-link,.markdown-body h2 .glyphicon-link,.markdown-body h3 .glyphicon-link,.markdown-body h4 .glyphicon-link,.markdown-body h5 .glyphicon-link,.markdown-body h6 .glyphicon-link{
   display:none;
   color:#000;
+  font-size:16px;
   vertical-align:middle
 }
 
@@ -346,7 +349,7 @@ body {
   text-decoration:none
 }
 
-.markdown-body h1:hover .anchor .octicon-link,.markdown-body h2:hover .anchor .octicon-link,.markdown-body h3:hover .anchor .octicon-link,.markdown-body h4:hover .anchor .octicon-link,.markdown-body h5:hover .anchor .octicon-link,.markdown-body h6:hover .anchor .octicon-link{
+.markdown-body h1:hover .anchor .glyphicon-link,.markdown-body h2:hover .anchor .glyphicon-link,.markdown-body h3:hover .anchor .glyphicon-link,.markdown-body h4:hover .anchor .glyphicon-link,.markdown-body h5:hover .anchor .glyphicon-link,.markdown-body h6:hover .anchor .glyphicon-link{
   display:inline-block
 }
 

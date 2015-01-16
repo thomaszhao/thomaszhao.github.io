@@ -107,6 +107,18 @@
         /*google-code-prettify*/
         $('pre').addClass('prettyprint').attr('style', 'overflow:auto');
         prettyPrint();
+
+        $(".bs-docs-container h1,.bs-docs-container h2, .bs-docs-container h3, .bs-docs-container h4, .bs-docs-container h5, .bs-docs-container h6").each(function(i, el) {
+          var $el, icon, id;
+          $el = $(el);
+          id = $el.attr('id');
+          icon = '<span class="glyphicon glyphicon-link"></span>';
+          if (id) {
+             $el.prepend($("<a class='anchor' />").attr("href", "#" + id).html(icon));
+          }
+        })
+
+
       });
     </script>
   </body>
