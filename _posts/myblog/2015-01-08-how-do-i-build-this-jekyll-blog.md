@@ -25,7 +25,7 @@ tags : [myblog]
 * 代码简单、清晰，这样我可以按照自己的想法进行定制化修改；
 * 有评论，便于分享和讨论；
 
-## 设计到的技术
+## 涉及到的技术
 
 技术选型的原因及可替代方案[见后文](#alternative-solutions)。
 
@@ -182,12 +182,14 @@ https://github.com/thomaszhao/thomaszhao.github.io/commit/665bca6b7ab7b2dd304b04
 
 常见的TOC有2种实现方法：
 
-* 在服务器端生成的；
+* 在服务器端生成的目录树；
 * 在浏览器端通过js动态生成目录树；
 
 常见的目录树是在服务器端生成的，getbootstrap官网的目录树也是在服务器端生成的。
 如果jekyll选用`kramdown`作为`markdown`引擎，可以通过指令`{:toc}`来生成一个目录树的。
-但是生成的目录树不是很方便定制，我用的是js生成。总体思路是：读取页面中文章内容部分的h1、h2、h3标签，然后生成目录树，放到指定位置。
+但是生成的目录树不是很方便定制，
+
+我用的是js生成。总体思路是：读取页面中文章内容部分的h1、h2、h3标签，然后生成目录树，放到指定位置。
 
 * 生成目录树部分：jQuery读取文章内容部分的`h1~h3`，生成`ul`列表，赋值给`TOC`的容器。不需多言。
 * 放到指定位置、跟随文章阅览时触发高亮：抄的[bootstrap文档官网](http://getbootstrap.com/getting-started/)的实现和样式，基于[bootstrap的affix.js特性](http://getbootstrap.com/javascript/#affix)。
@@ -200,16 +202,23 @@ https://github.com/thomaszhao/thomaszhao.github.io/commit/665bca6b7ab7b2dd304b04
 ```
 
 
-#### 参考资料：
-
+**参考资料**:
 目录导航的样式摘抄自bootstrap的官网文档部分：（但是他是服务器端手写的side nav）
+
+```
 http://getbootstrap.com/getting-started/
 https://github.com/twbs/bootstrap/blob/master/docs/_layouts/default.html#L33
+```
+
 js动态生成目录树的代码摘抄自以下2个：
-http://www.pchou.info/web-build/2013/01/09/build-github-blog-page-06.html
-https://github.com/PChou/PChou.github.io
-http://www.cnblogs.com/xdp-gacl/p/3718879.html
+
+```
+    http://www.pchou.info/web-build/2013/01/09/build-github-blog-page-06.html
+    https://github.com/PChou/PChou.github.io
+    http://www.cnblogs.com/xdp-gacl/p/3718879.html
+```
 (方法非常相似，cnblog使用的是html的语法，pchow的用的是jquery的语法)
+
 
 
 和github尽量相似的样式:
