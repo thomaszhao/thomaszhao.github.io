@@ -679,16 +679,6 @@ body {
   border-top:0
 }
 
-.markdown-body blockquote{
-  padding:0 0 0 40px;
-  border:0 none
-}
-
- .markdown-body blockquote,.activity-tab .news .alert .commits{
-  padding-left:0
-}
-
-  
 
 
 
