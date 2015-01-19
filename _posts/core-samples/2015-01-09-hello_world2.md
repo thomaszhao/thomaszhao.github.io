@@ -9,15 +9,38 @@ tags : [beginner, sandbox]
 ---
 {% include JB/setup %}
 
+
+Test for `back quote`:
+
+> This is only a sandbox.
+> aaaaa
+> bbbbb
+
+
 {{ page.layout }}
 
 测试换行：
+
 baaaaaaaaaaa aaaaaaaaaaaa aaaaaaaaaaaa aaaaaaaaa aaaaaaaaalaba labal abaaaa aaaaaaaaaa aaaaaaaaaa aaaaaaaa aaaaaaaaa aaaaaaaaa aaalabalabala
 baaaaaaaaaaaa aaaaaaaaaaaaa aaaaaaaaaaa aaaaaaaaaaaaaaaaalabalabala
 baaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaa alabalabala
 baaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaalabalabala
 
 baaaaaaaaa aaaaaaaaa aaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaalabalabala
+
+
+Here is List:
+
+* aaa
+* bbb
+* ccc
+
+
+~~~
+
+code is here
+
+~~~
 
 
 ``` tips
@@ -64,6 +87,7 @@ int main(int argc, char *argv[])
 
 * highlight by Pygments:
 
+```
 {% highlight c linenos %}
 #include <stdio.h>
 int main(int argc, char *argv[]) 
@@ -73,8 +97,13 @@ int main(int argc, char *argv[])
   exit 0;
 }
 {% endhighlight c %}
+```
 
 #this is not a header
+
+[1]  aaaa;
+
+[X] todo
 
 This is a sentence.[^1]
 
