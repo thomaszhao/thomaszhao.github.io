@@ -12,8 +12,7 @@ safe: true
 markdown:    kramdown
 kramdown:
   input: GFM
-  hard_wrap: true
-  auto_id_prefix: "aaaaa"
+  #Insert HTML <br /> tags inside paragraphs where the original Markdown document had newlines (by default, Markdown ignores these newlines). default is true. Github is false.
   hard_wrap: false
 
 redcarpet:
