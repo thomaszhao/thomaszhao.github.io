@@ -43,10 +43,9 @@ var BlogDirectory = {
 
                         return (this.top = offsetTop - navOuterHeight - sideBarMargin)
                     },
-                    // TODO: here has a bug when the TOC is too long
-                    //bottom: function () {
-                    //    return (this.bottom = $('.bs-docs-bar-footer').outerHeight(true))
-                    //}
+                    bottom: function () {
+                        return (this.bottom = 0 - $('.bs-docs-container').outerHeight(true))
+                    }
                 }
             })
         }, 100)
