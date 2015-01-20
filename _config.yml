@@ -14,7 +14,6 @@ kramdown:
   input: GFM
   #Insert HTML <br /> tags inside paragraphs where the original Markdown document had newlines (by default, Markdown ignores these newlines). default is true. Github is false.
   hard_wrap: false
-  transliterated_header_ids: true
 
 redcarpet:
   extensions: [autolink,with_toc_data]
