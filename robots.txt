@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: 
+Disallow: /atom.xml
+Disallow: /pages.html
+Disallow: /rss.xml
+Disallow: /sitemap.txt
+Disallow: /tools.html
+Disallow: /bin/
