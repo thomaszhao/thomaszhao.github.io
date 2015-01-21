@@ -248,9 +248,16 @@ kramdown:
 站内搜索
 ------------------------------------------------------------------------------
 
-[ ] TODO, 尚未实现
-[ ]: TODO, 尚未实现
+站内搜索本身应该用[google的自定义搜索](https://www.google.com/cse/all),
+但是无奈身在天朝，只能将就着用[Baidu的站内搜索了](http://zhanzhang.baidu.com/guide/index)。
 
+Baidu提供的[`站内搜索`](http://zhanzhang.baidu.com/guide/index)的js代码不知道为什么不好用，
+我直接用的他的[`搜索代码`](http://zhanzhang.baidu.com/tools/code)，效果半斤八两，
+收录速度相比google都差太多。
+
+直接看代码：
+
+    https://github.com/thomaszhao/thomaszhao.github.io/commit/a8b8772f2bd69013714ef098fd71d5c2b84020c8
 
 其他配置
 ------------------------------------------------------------------------------
@@ -260,6 +267,7 @@ kramdown:
 #### 配置分享条
 
 我也直接用的duoshuo的插件，如果需要的话请直接看代码:
+
     https://github.com/thomaszhao/thomaszhao.github.io/commit/97487a289ea97be2630a4e3ec399426b8805d096
     https://github.com/thomaszhao/thomaszhao.github.io/blob/master/_includes/JB/sharing
     https://github.com/thomaszhao/thomaszhao.github.io/blob/master/_includes/JB/sharing-providers/duoshuo
