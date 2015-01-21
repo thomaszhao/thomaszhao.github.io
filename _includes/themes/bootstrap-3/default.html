@@ -9,7 +9,7 @@
       <meta name="keywords" content="{{ page.tags | join: ', ' }}">
     {% endif %}
     {% if page.excerpt %}
-      <meta name="description" content="{{ page.excerpt | strip_html | truncate: 80 }}">
+    <meta name="description" content="{{ page.excerpt | strip_html | truncate: 190 }} - {{  site.author.name }}">
     {% endif %}
     <meta name="author" content="{{ site.author.name }}">
 
