@@ -1,14 +1,14 @@
 
-## Thomas's Blog
+## [Thomas Zhao's Blog](http://www.thomaszhao.cn/)
 
-This is my personal blog and wiki.
+This is my personal blog and wiki, I will post kinds of technology articles on it.
 
 It is built based on:
 
 - [jekyllbootstrap](http://jekyllbootstrap.com)
 - [github pages](https://pages.github.com)
 
-You are welcome to fork it.
+You are welcome to fork the framework.
 
 
 ## Feature List
