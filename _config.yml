@@ -6,6 +6,9 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 #highlighter: pygments
 highlighter: ""
 
+# for description
+excerpt_separator: "<!-- more -->"
+
 safe: true
 
 # conversion
