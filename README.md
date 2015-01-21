@@ -11,15 +11,14 @@ It is built based on:
 You are welcome to fork it.
 
 
-## My Change Log:
+## Feature List
 
-* 20150108: persionally format.
-
-## Todo List:
-
-[ ] 20150108: homepage has a resource linked to cloudflare, which is very slow in China
-
-
+* Same Styles as original Github.
+* Table of Content.
+* What exactly as I thought.
+* Comments.
+* Search in Site.
+* else.
 
 ## License
 
