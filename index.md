@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Thomas's Blog
+title: Thomas Zhao's Blog
 tagline: ""
 ---
 {% include JB/setup %}
