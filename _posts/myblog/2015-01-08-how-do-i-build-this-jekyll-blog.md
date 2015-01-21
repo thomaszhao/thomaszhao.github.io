@@ -1,7 +1,6 @@
 ---
 title: 基于github pages + jekyll的博客搭建过程
 tagline: ""
-excerpt: ""
 category: myblog
 layout: post
 tags : [myblog]
@@ -12,6 +11,8 @@ tags : [myblog]
 我的这个blog([Thomas's blog](http://www.thomaszhao.cn/))是基于[github pages](https://pages.github.com/)搭建的。
 本文记载这个blog搭建、配置过程。
 欢迎[fork](https://github.com/thomaszhao/thomaszhao.github.io)或基于本模板搭建你自己的blog。。
+
+<!-- more -->
 
 总体概述
 ===============================================================================

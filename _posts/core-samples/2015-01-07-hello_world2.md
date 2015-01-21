@@ -16,6 +16,8 @@ Test for `back quote`:
 > aaaaa
 > bbbbb
 
+<!-- more -->
+
 
 {{ page.layout }}
 
