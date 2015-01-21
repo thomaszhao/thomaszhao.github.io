@@ -1,9 +1,11 @@
 User-agent: *
 Disallow: 
 Disallow: /assets/
+Disallow: /archive.html
 Disallow: /atom.xml
+Disallow: /categories.html
 Disallow: /pages.html
 Disallow: /rss.xml
 Disallow: /sitemap.txt
+Disallow: /tags.html
 Disallow: /tools.html
-Disallow: /bin/
