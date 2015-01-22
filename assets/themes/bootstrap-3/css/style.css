@@ -634,7 +634,8 @@ body {
 }
 
 .markdown-body pre{
-  word-wrap:normal
+  word-wrap:normal;
+  border: 0px solid #ccc;
 }
 
 .markdown-body pre code,.markdown-body pre tt{
