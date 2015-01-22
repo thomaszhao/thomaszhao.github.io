@@ -1,5 +1,5 @@
 ---
-title: 像写代码一样的写博客 -- 基于github pages + jekyll + markdown打造自己的blog
+title: 程序员的博客 -- 基于github pages + jekyll + markdown打造自己的blog
 tagline: ""
 category: myblog
 layout: post
