@@ -1,16 +1,15 @@
 ---
-title: 基于github pages + jekyll的博客搭建过程
+title: 像写代码一样的写博客 -- 基于github pages + jekyll + markdown打造自己的blog
 tagline: ""
 category: myblog
 layout: post
-tags : [myblog]
+tags : [jekyll, jekyllbootstrap, bootstrap, markdown, github pages]
 ---
 {% include JB/setup %}
 
-
 我的这个blog([Thomas's blog](http://www.thomaszhao.cn/))是基于[github pages](https://pages.github.com/)搭建的。
 本文记载这个blog搭建、配置过程。
-欢迎[fork](https://github.com/thomaszhao/thomaszhao.github.io)或基于本模板搭建你自己的blog。。
+欢迎[fork](https://github.com/thomaszhao/thomaszhao.github.io)或基于本模板搭建你自己的blog。
 
 <!-- more -->
 
@@ -21,9 +20,10 @@ tags : [myblog]
 
 我想要的blog的效果是这个网站这样的效果: [getbootstrap](http://getbootstrap.com/getting-started/)
 
-* 整体结构简洁，外观看起来像个技术博客；
+* 整体结构简洁，外观看起来像个技术`blog`或`wiki`；
 * 右侧有目录树，便于查看；
 * 代码简单、清晰，这样我可以按照自己的想法进行定制化修改；
+* 文章要用`markdown`编写；
 * 有评论，便于分享和讨论；
 
 ## 涉及到的技术
@@ -298,6 +298,9 @@ https://github.com/thomaszhao/thomaszhao.github.io/commit/7c38b0213d6d9fa240a898
 Alternative Solutions
 ===============================================================================
 
+能够实现类似功能、效果的博客系统其实是非常多的，方法也是各式各样，例如:[cnblogs](http://www.cnblogs.com/)、[wordpress](https://wordpress.org/)等等。
+但我经过一定的思考，还是选择了`github pages`，也许是对`git`的过于喜爱吧。
+
 ### Why Github Pages
 
 Github Pages优点：
@@ -338,26 +341,33 @@ Github Pages缺点：
 * 有多种模板(但是数量上没法和hexo比较)
 * 定制化很少，基本保持jekyll的原滋原味
 
+[Octopress](http://octopress.org/)
+
+* 也是分分钟搭建博客;
+* 用的人也是很多;
+
 或者直接使用原生的jekyll自己搭建。
 
 * 我对html之类的并不太熟悉，还是弄个模板吧。
 
-我最终选定的[jekyllbootstrap](http://jekyllbootstrap.com)。
+我最终选定的[jekyllbootstrap](http://jekyllbootstrap.com)来作为初始模板，
+后期经过了自己的改版，也满足了我深度定制的小欲望。
 
 ### 选用哪个样式？
 
 jekyllbootstrap也有很多的样式可以选择，我开始选择的是[The-program](http://themes.jekyllbootstrap.com/preview/the-program/)模板，感觉很IT。但后来发现这个模板的代码写的太浮肿了...。
 于是采用的是默认的`bootstrap-3`的模板，外加一些自己的小修改。后续进行不断的调优。
+
 BTW: 话说基于[bootstrap](http://getbootstrap.com)的web开发竟然变得如此优雅，想当年我们画表格的日子简直是弱爆了。
 
 ### 评论插件、站长统计
 
-用disqus还是多说？
+用`disqus`还是`多说`？
 
-* disqus: 匿名发文看起来更有好些；国际化看起来更好一些；
+* disqus: 匿名发文看起来更有好些；国际化看起来更好一些；功能比多说要强大很多。
 * 多说：可以和微博互动。
 
-还是使用国内的吧，速度快点。
+还是使用国内的吧，速度快点，被屏蔽的风险也要小一点。
 
 google的站长统计速度看起来并不是特别慢，所以还是用了Google Analytics.
 
@@ -450,7 +460,6 @@ google的站长统计速度看起来并不是特别慢，所以还是用了Googl
 |-- categories.html
 `-- tags.html
 
-
 ```
 
 其他tips
@@ -460,11 +469,14 @@ google的站长统计速度看起来并不是特别慢，所以还是用了Googl
 
 {% raw %} 
 如何让liquid代码不被解析？jekyll + liquid中，如果你需要输出`{% xxx %}`或`{{ xxx }}`时，因为这是liquid的特殊含义字符，所以会被jekyll解析，产生错误。如何正确的输出呢？
+
 答案: 使用 `{% raw %}` `{ % endraw %}` (去掉`{`和`%`之间的空格，这个endraw我也没办法输出。。。)
 {% endraw %}
 
 参考：
-	http://docs.shopify.com/themes/liquid-documentation/tags/theme-tags#raw
+
+    http://docs.shopify.com/themes/liquid-documentation/tags/theme-tags#raw
+
 
 
 
