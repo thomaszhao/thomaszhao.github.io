@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Thomas Zhao's Blog
-tagline: ""
+tagline: Make the Web Better
 ---
 {% include JB/setup %}
 
