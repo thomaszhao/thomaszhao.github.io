@@ -109,6 +109,10 @@
   font-size: 17px;
   font-weight: bold;
   color: #767676;
+  /*no wrap*/
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis
 }
 .bs-docs-sidebar .nav > li > a:hover,
 .bs-docs-sidebar .nav > li > a:focus {
