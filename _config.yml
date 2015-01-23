@@ -47,6 +47,16 @@ production_url : http://www.thomaszhao.cn
 production_sitename : www.thomaszhao.cn
 repository_url: https://github.com/thomaszhao/thomaszhao.github.io/blob/master/
 
+#  specify configuration in the pages and posts for your site.
+defaults:
+  -
+    scope:
+      path: "_drafts"
+    values:
+      draft_flag: "[draft]"
+
+
+
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
 JB :
