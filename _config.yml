@@ -2,7 +2,8 @@
 # For more see: http://jekyllrb.com/docs/permalinks/
 permalink: /:year/:month/:day/:title
 
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md",
+          "jekyll_serve.sh", "CNAME"]
 #highlighter: pygments
 highlighter: ""
 
