@@ -290,7 +290,7 @@ body {
  * -------------------------------------------------------------------------*/
 
 
-.tom-callout-tips {
+.markdown-body .tom-callout-tips {
   border: 3px solid #C0C0C0;
   border-left-width: 6px;
   border-left-color: #f0ad4e;
