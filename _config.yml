@@ -54,6 +54,11 @@ defaults:
       path: "_drafts"
     values:
       draft_flag: "[draft]"
+  -
+    scope:
+      path: "privates/_posts"
+    values:
+      draft_flag: "[Private]"
 
 
 
