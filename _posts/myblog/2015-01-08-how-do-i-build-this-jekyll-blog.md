@@ -372,8 +372,8 @@ Tips: 如果我本地换机器了，需要从新下载整套新的代码，需�
 日常的工作流程是：
 
 * 想正常发布的文章，放到master分支里，正常使用；
-* 想保密的文章，切换到`private`分支，这样只可以用来本地预览；
-* 注意只能把代码从master分支`merge`到`private`分支，不能反过来做。
+* 想保密的文章，切换到`private`分支，写在`privates/_posts/`目录下，这样可以在本地预览，并推送到私有分支；
+* 注意: 只能把代码从master分支`merge`到`private`分支，不能反向merge。
 
 
 其他可用的方案 Alternative Solutions
