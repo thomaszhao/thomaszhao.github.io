@@ -1,6 +1,7 @@
 ---
 title: 我是模板的标题
 tagline: ""
+last_updated: null
 category : template
 layout: post
 tags : [template, myblog]
