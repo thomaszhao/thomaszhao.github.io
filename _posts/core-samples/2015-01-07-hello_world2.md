@@ -1,6 +1,7 @@
 ---
 title: 我是hello world (sandbox)
 layout: post
+last_updated: null
 category : lessons
 tagline: ""
 old_id: /2015/01/09/hello_world2aaa

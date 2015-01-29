@@ -1,6 +1,7 @@
 ---
 title: 适合程序员的Blog -- 基于github pages + jekyll + markdown打造自己的blog
 tagline: ""
+last_updated: 2015-1-29
 category: myblog
 layout: post
 tags : [jekyll, jekyllbootstrap, bootstrap, markdown, github pages, vim markdown插件]
