@@ -72,7 +72,7 @@ probe end
     # strace ./<xxx> start
     ## 查找其中`init_module`函数的参数
 
-###使用insmod将模块插入：
+### 使用insmod将模块插入：
 
     # insmod ./<xxx>.ko <other parameters>
 
