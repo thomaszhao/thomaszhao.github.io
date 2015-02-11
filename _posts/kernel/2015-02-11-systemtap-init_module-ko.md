@@ -63,7 +63,7 @@ probe end
 
     # ./<xxx> start
 
-使用`xxd`命令反向把hex变为文件：
+使用`xxd`命令反向把hex变为文件(注意先去除前两行信息)：
 
     #xxd -r -p 1.txt <xxx>.ko
 
@@ -76,7 +76,9 @@ probe end
 
     # insmod ./<xxx>.ko <other parameters>
 
-大功高成~
+
+内核面前本无秘密，大功高成~
+
 下一步就打开`IDA pro`尽情的反吧。
 
 
