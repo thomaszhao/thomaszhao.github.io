@@ -10,7 +10,8 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md",
 # for description
 excerpt_separator: "<!-- more -->"
 
-safe: true
+## safe is false by default in local, this is the flag for known from remote.
+#safe: true
 
 # conversion
 markdown:    kramdown
