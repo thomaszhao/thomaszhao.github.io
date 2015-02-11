@@ -1,0 +1,7 @@
+<div>
+<br/>
+本文作者<a href="{{ site.production_url }}">{{ site.author.name }}</a>，转载必须标注出处:
+<a href="{{page.url}}">{{ page.title }}</a>
+<br/>
+</div>
+
