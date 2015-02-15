@@ -1,6 +1,8 @@
 <div>
 <br/>
-本文作者<a href="{{ site.production_url }}">{{ site.author.name }}</a>，转载请务必标注出处:
+本文作者<a href="{{ site.production_url }}">{{ site.author.name }}</a>, 欢迎评论、交流。
+<br/>
+转载请务必标注出处:
 <a href="{{page.url}}">{{ page.title }}</a>
 <br/>
 </div>
