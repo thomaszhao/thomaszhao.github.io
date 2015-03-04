@@ -45,8 +45,7 @@ tags : [ mobile, CDN, TCP, HTTP, pagespeed, quic]
 术业有专攻，如果你觉得对这个话题有兴趣，但看这篇文章有障碍时，不妨先把这些资料看了。
 （也不排除是我的写作水平有限，如果是我表达能力不足的话，看官们看完资料就洗洗睡吧。）
 
-#### 《High Performance Browser Networking》，中文译名《Web性能权威指南》
-
+* **《High Performance Browser Networking》，中文译名《Web性能权威指南》**
 
 书是作者2013~2014年出版的，2014年5月份有了中文版。
 可以在[oreilly的官网上免费看英文版的](http://chimera.labs.oreilly.com/books/1230000000545/index.html)。
@@ -61,7 +60,7 @@ tags : [ mobile, CDN, TCP, HTTP, pagespeed, quic]
 每个专业方向都会有本圣经级别的好书，这本书个人认为是圣经级别的，就是薄了点。
 其实我只想说，这本书是本好书，非常推荐CDN从业人员或http相关的技术人员看的一本书。(虽然我只看了前3部分~)
 
-#### [Pagespeed 官网资料](https://developers.google.com/speed/pagespeed/module)
+* **[Pagespeed 官网资料](https://developers.google.com/speed/pagespeed/module)**
 
 pagespeed是google的`Make the Web Faster`中的重要一环。
 Google在`Make the Web Faster`中真的是做了极大的努力和开放，
@@ -166,7 +165,8 @@ pagespeed在CDN中的使用方式相对比较随性：
 
 单纯的图片优化（图片质量变化，图片类型转换，图片大小改变），是pagespeed的一个子功能，
 也有很多开源软件、开源库实现了，例如ziproxy，也有几个基于nodejs的实现。看起来也比较有市场。
-(从实现角度上看，包括pagespeed和这些软件，大家底层都是用的类似的几个开源库，很少有重复造的轮子~)
+(从实现角度上看，包括pagespeed和这些软件，大家底层都是用的类似的几个开源库，
+巨人也是站在巨人的肩膀上的。)
 
 例子是：又拍云和腾讯智图（可能还有其他很多产品），可以上传图片，并且可以做图片质量变换、类型转换之类的事情。
 
